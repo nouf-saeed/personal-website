@@ -432,3 +432,37 @@ body {
     scroll-margin-top: 100px;
 }
 
+
+/* Responsive Education Table */
+
+.education-card {
+    min-width: 0;
+    max-width: 100%;
+}
+
+.education-card table {
+    width: 100%;
+    max-width: 100%;
+    table-layout: fixed;
+}
+
+.education-card th,
+.education-card td {
+    overflow-wrap: anywhere;
+    word-break: normal;
+}
+
+@media (max-width: 768px) {
+    .education-card {
+        padding: 20px 10px;
+    }
+
+    .education-card table {
+        font-size: 11px;
+    }
+
+    .education-card th,
+    .education-card td {
+        padding: 6px 3px;
+    }
+}
